@@ -15,7 +15,7 @@ class OrderItemCard extends StatefulWidget {
 }
 
 class _OrderItemCartState extends State<OrderItemCard> {
-  var _expanded = false;
+  //var _expanded = false;
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +24,7 @@ class _OrderItemCartState extends State<OrderItemCard> {
       child: Column(
         children: <Widget>[
           buildOrderSummary(),
-          if (_expanded) buildOrderDetails()
+          //if (_expanded) buildOrderDetails()
         ],
       ),
     );

@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 
 import '../../models/product.dart';
-import '../shared/dialog_utils.dart';
 import 'products_manager.dart';
 
 class EditProductScreen extends StatefulWidget {
@@ -59,12 +57,6 @@ class _EditProductScreenState extends State<EditProductScreen> {
     return Scaffold(
         appBar: AppBar(
           title: const Text('Chỉnh sửa sản phẩm'),
-          actions: <Widget>[
-            // IconButton(
-            //   icon: const Icon(Icons.save),
-            //   onPressed: _saveForm,
-            // ),
-          ],
         ),
         body: _isLoading
             ? const Center(
@@ -76,24 +68,24 @@ class _EditProductScreenState extends State<EditProductScreen> {
                     key: _editForm,
                     child: ListView(
                       children: <Widget>[
-                        Text('Tên sản phẩm: '),
+                        const Text('Tên sản phẩm: '),
                         buildTitleField(),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
-                        Text('Giá sản phẩm: '),
+                        const Text('Giá sản phẩm: '),
                         buildPriceField(),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
-                        Text('Mô tả sản phẩm: '),
+                        const Text('Mô tả sản phẩm: '),
                         buildDescriptionField(),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
-                        Text('Ảnh sản phẩm: '),
+                        const Text('Ảnh sản phẩm: '),
                         buildProductPreview(),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
                         _buildSubmitButton(),
@@ -132,7 +124,7 @@ class _EditProductScreenState extends State<EditProductScreen> {
           color: Theme.of(context).primaryTextTheme.headline6?.color,
         ),
       ),
-      child: Text('Cập nhật'),
+      child: const Text('Cập nhật'),
     );
   }
 

@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 import 'cart_item.dart';
 
 class OrderItem {

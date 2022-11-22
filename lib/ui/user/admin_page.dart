@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:fruitshop/main.dart';
-import 'package:fruitshop/ui/orders/orders_screen.dart';
 import '../auth/auth_manager.dart';
 import 'user_products_screen.dart';
 import 'package:provider/provider.dart';

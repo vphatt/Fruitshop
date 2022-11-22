@@ -2,8 +2,6 @@
 
 import 'dart:convert';
 
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:fruitshop/models/cart_item.dart';
 import 'package:fruitshop/models/order_item.dart';
 import 'package:http/http.dart' as http;
 

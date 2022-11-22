@@ -1,7 +1,6 @@
 // ignore_for_file: avoid_print
 
 import 'package:flutter/material.dart';
-import 'package:fruitshop/models/order_item.dart';
 import 'package:provider/provider.dart';
 
 import 'orders_manager.dart';
@@ -12,9 +11,9 @@ class OrdersScreen extends StatelessWidget {
   const OrdersScreen({super.key});
   // final OrderItem orderItem;
 
-  Future<void> _refreshOrders(BuildContext context) async {
-    await context.read<OrdersManager>().fetchOrders(true);
-  }
+  // Future<void> _refreshOrders(BuildContext context) async {
+  //   await context.read<OrdersManager>().fetchOrders(true);
+  // }
 
   @override
   Widget build(BuildContext context) {

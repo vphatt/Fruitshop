@@ -1,7 +1,6 @@
 import 'package:flutter/foundation.dart';
 
 import '../../models/auth_token.dart';
-import '../../models/cart_item.dart';
 import '../../models/order_item.dart';
 import '../../services/order_service.dart';
 
@@ -19,7 +18,7 @@ class OrdersManager with ChangeNotifier {
 
   Future<void> fetchOrders([bool filterByUser = false]) async {
     _orders = await _ordersService.fetchOrders();
-    print(_orders);
+
     notifyListeners();
   }
 

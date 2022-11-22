@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../models/product.dart';
-import '../shared/dialog_utils.dart';
 import 'products_manager.dart';
 
 class AddProductScreen extends StatefulWidget {
@@ -64,12 +63,6 @@ class _AddProductScreenState extends State<AddProductScreen> {
     return Scaffold(
         appBar: AppBar(
           title: const Text('Thêm sản phẩm'),
-          actions: <Widget>[
-            // IconButton(
-            //   icon: const Icon(Icons.save),
-            //   onPressed: _saveForm,
-            // ),
-          ],
         ),
         body: _isLoading
             ? const Center(
@@ -81,24 +74,24 @@ class _AddProductScreenState extends State<AddProductScreen> {
                     key: _addForm,
                     child: ListView(
                       children: <Widget>[
-                        Text('Tên sản phẩm: '),
+                        const Text('Tên sản phẩm: '),
                         buildTitleField(),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
-                        Text('Giá sản phẩm: '),
+                        const Text('Giá sản phẩm: '),
                         buildPriceField(),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
-                        Text('Mô tả sản phẩm: '),
+                        const Text('Mô tả sản phẩm: '),
                         buildDescriptionField(),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
-                        Text('Ảnh sản phẩm: '),
+                        const Text('Ảnh sản phẩm: '),
                         buildProductPreview(),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
                         _buildSubmitButton(),
@@ -137,7 +130,7 @@ class _AddProductScreenState extends State<AddProductScreen> {
           color: Theme.of(context).primaryTextTheme.headline6?.color,
         ),
       ),
-      child: Text('Thêm'),
+      child: const Text('Thêm'),
     );
   }
 

@@ -39,7 +39,7 @@ class _AuthCardState extends State<AuthCard> {
     try {
       if (_authMode == AuthMode.login) {
         // Log user in
-        print(_authData['email']);
+
         await context.read<AuthManager>().login(
               _authData['email']!,
               _authData['password']!,

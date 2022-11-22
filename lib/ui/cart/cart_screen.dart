@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:fruitshop/models/auth_token.dart';
 import 'package:fruitshop/models/order_item.dart';
-import 'package:fruitshop/ui/auth/auth_manager.dart';
 import 'package:fruitshop/ui/orders/orders_manager.dart';
 import 'package:intl/intl.dart';
-import '../../services/firebase_service.dart';
 import 'cart_manager.dart';
 import 'cart_item_card.dart';
 import 'package:provider/provider.dart';
